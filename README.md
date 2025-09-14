@@ -1,4 +1,4 @@
-# ZTA Survey Analysis | 零信任架构调研数据分析
+# ZTA Survey Dada Analysis
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
