@@ -1,0 +1,2 @@
+Chi-square Q1.4 x adopt_zta
+chi2=15.481, p=0.11549, dof=10

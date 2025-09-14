@@ -1,0 +1,2 @@
+ANOVA Q3.2_1 ~ adopt_zta
+F=0.844, p=0.36174

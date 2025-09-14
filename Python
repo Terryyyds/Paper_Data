@@ -1,0 +1,22 @@
+import pandas as pd
+import numpy as np
+
+# Assuming 'df' is your dataframe and constructs are predefined
+construct_columns = {
+    'ThreatSeverity': ['Q2.1', 'Q2.2', 'Q2.3'],
+    'CopingEfficacy': ['Q2.4', 'Q2.5', 'Q2.6'],
+    'AdoptionIntention': ['Q2.9_1', 'Q2.9_2', 'Q2.9_3']
+}
+
+# Function to calculate Cronbach's Alpha
+def cronbach_alpha(df_subset):
+    item_vars = df_subset.var(ddof=1, axis=0)
+    total_var = df_subset.sum(axis=1).var(ddof=1)
+    k = df_subset.shape[1]
+    return (k / (k - 1)) * (1 - item_vars.sum() / total_var)
+
+# Apply function to each construct
+for construct, cols in construct_columns.items():
+    sub_df = df[cols].dropna()  # Clean data
+    alpha = cronbach_alpha(sub_df)
+    print(f"Cronbach's alpha for {construct}: {alpha:.2f}")

@@ -1,0 +1,1 @@
+未检测到可用于 Cronbach/ EFA 的多题Likert构念；跳过信度与EFA。可改为对二元多选做MCA或聚类。
