@@ -1,4 +1,4 @@
-# ZTA Survey Analysis | 零信任架构调研分析
+# ZTA Survey Analysis | 零信任架构调研数据分析
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange.svg)](https://jupyter.org/)
@@ -10,16 +10,35 @@
 
 This project is a comprehensive survey research analysis on Zero Trust Architecture (ZTA) adoption. Through questionnaire data collection and various statistical analysis methods, it explores organizations' cognition, attitudes, and adoption behaviors towards ZTA.
 
+## 项目结构 | Project Structure
+
+```
+Paper_Data/
+├── README.md                          # 项目说明文档
+├── ZTA_Analysis.ipynb                 # 主要分析Notebook（原始版本）
+├── ZTA_Analysis_executed.ipynb        # 已执行的分析Notebook
+├── Cleaned Data-5.20.xlsx             # 清洗后的原始数据
+├── Python/                            # Python脚本目录
+└── analysis_outputs/                  # 分析结果输出目录
+    ├── cleaned_dataset.csv            # 清洗后的数据集
+    ├── cronbach_alpha.csv             # 信度分析结果
+    ├── efa_summary.json               # 因子分析摘要
+    ├── correlation_core.csv           # 相关分析结果
+    ├── logit_adopt.txt                # 逻辑回归结果
+    ├── mca_Q3_3_*.csv                 # MCA分析结果
+    ├── chisq_*.csv                    # 卡方检验结果
+    ├── freq_*.csv                     # 频数分析结果
+    ├── anova_*.txt                    # ANOVA分析结果
+    └── *.png                          # 可视化图表
+```
 ## 研究目标 | Research Objectives
 
-### 中文
 - 分析组织对零信任架构的熟悉程度和认知水平
 - 评估组织对ZTA必要性的感知
 - 调查当前安全解决方案的满意度
 - 探索组织规模、行业类型与ZTA采用的关系
 - 识别影响ZTA采用的关键因素
 
-### English
 - Analyze organizations' familiarity and awareness levels with Zero Trust Architecture
 - Assess organizations' perception of ZTA necessity
 - Investigate satisfaction with current security solutions
@@ -76,43 +95,33 @@ This project is a comprehensive survey research analysis on Zero Trust Architect
 - 基于多选题数据的降维分析
 - 选项共现模式分析
 
-## 项目结构 | Project Structure
-
-```
-Paper_Data/
-├── README.md                          # 项目说明文档
-├── ZTA_Analysis.ipynb                 # 主要分析Notebook（原始版本）
-├── ZTA_Analysis_executed.ipynb        # 已执行的分析Notebook
-├── Cleaned Data-5.20.xlsx             # 清洗后的原始数据
-├── Python/                            # Python脚本目录
-└── analysis_outputs/                  # 分析结果输出目录
-    ├── cleaned_dataset.csv            # 清洗后的数据集
-    ├── cronbach_alpha.csv             # 信度分析结果
-    ├── efa_summary.json               # 因子分析摘要
-    ├── correlation_core.csv           # 相关分析结果
-    ├── logit_adopt.txt                # 逻辑回归结果
-    ├── mca_Q3_3_*.csv                 # MCA分析结果
-    ├── chisq_*.csv                    # 卡方检验结果
-    ├── freq_*.csv                     # 频数分析结果
-    ├── anova_*.txt                    # ANOVA分析结果
-    └── *.png                          # 可视化图表
-```
-
 ## 主要发现 | Key Findings
 
-### 中文
 1. **样本特征**: 64个组织中，50-250人规模的组织占比最高（37.5%）
 2. **行业分布**: 涵盖教育、能源、金融、医疗、制造业等多个行业
 3. **ZTA认知**: 组织对ZTA的熟悉程度和必要性感知存在差异
 4. **采用预测**: 逻辑回归模型显示ZTA必要性感知对采用行为有正向影响
 5. **统计显著性**: 组织规模与ZTA采用之间无显著关联（p=0.5075）
 
-### English
 1. **Sample Characteristics**: Among 64 organizations, those with 50-250 employees represent the highest proportion (37.5%)
 2. **Industry Distribution**: Covers multiple industries including education, energy, finance, healthcare, manufacturing
 3. **ZTA Awareness**: Organizations show varying levels of familiarity and perceived necessity of ZTA
 4. **Adoption Prediction**: Logistic regression model indicates perceived necessity of ZTA has a positive impact on adoption behavior
 5. **Statistical Significance**: No significant association between organizational size and ZTA adoption (p=0.5075)
+
+## 结果文件说明 | Output Files Description
+
+| 文件名 | 描述 | Description |
+|--------|------|-------------|
+| `cleaned_dataset.csv` | 清洗后的完整数据集 | Complete cleaned dataset |
+| `cronbach_alpha.csv` | 信度分析结果 | Reliability analysis results |
+| `correlation_core.csv` | 核心变量相关矩阵 | Core variables correlation matrix |
+| `logit_adopt.txt` | 逻辑回归模型结果 | Logistic regression model results |
+| `mca_Q3_3_*.csv` | 多重对应分析结果 | Multiple correspondence analysis results |
+| `chisq_*.csv` | 卡方检验交叉表 | Chi-square test contingency tables |
+| `freq_*.csv` | 各变量频数分布 | Frequency distributions for variables |
+| `anova_*.txt` | ANOVA分析结果 | ANOVA analysis results |
+| `*.png` | 可视化图表 | Visualization charts |
 
 ## 技术栈 | Technology Stack
 
@@ -147,44 +156,8 @@ jupyter notebook
 jupyter notebook ZTA_Analysis_executed.ipynb
 ```
 
-## 结果文件说明 | Output Files Description
-
-| 文件名 | 描述 | Description |
-|--------|------|-------------|
-| `cleaned_dataset.csv` | 清洗后的完整数据集 | Complete cleaned dataset |
-| `cronbach_alpha.csv` | 信度分析结果 | Reliability analysis results |
-| `correlation_core.csv` | 核心变量相关矩阵 | Core variables correlation matrix |
-| `logit_adopt.txt` | 逻辑回归模型结果 | Logistic regression model results |
-| `mca_Q3_3_*.csv` | 多重对应分析结果 | Multiple correspondence analysis results |
-| `chisq_*.csv` | 卡方检验交叉表 | Chi-square test contingency tables |
-| `freq_*.csv` | 各变量频数分布 | Frequency distributions for variables |
-| `anova_*.txt` | ANOVA分析结果 | ANOVA analysis results |
-| `*.png` | 可视化图表 | Visualization charts |
-
-## 贡献指南 | Contributing
-
-欢迎提交Issue和Pull Request来改进这个项目。
-
-Contributions are welcome! Please feel free to submit issues and pull requests.
-
 ## 许可证 | License
 
 本项目采用MIT许可证。详情请参阅 [LICENSE](LICENSE) 文件。
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## 联系方式 | Contact
-
-如有问题或建议，请通过以下方式联系：
-
-For questions or suggestions, please contact:
-
-- 项目维护者 | Project Maintainer: [Your Name]
-- 邮箱 | Email: [your.email@example.com]
-- GitHub: [your-github-username]
-
----
-
-**注意**: 本项目仅用于学术研究目的，请确保在使用数据时遵守相关的数据保护法规。
-
-**Note**: This project is for academic research purposes only. Please ensure compliance with relevant data protection regulations when using the data.
