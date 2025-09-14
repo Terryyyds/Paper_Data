@@ -95,20 +95,6 @@ Paper_Data/
 - 基于多选题数据的降维分析
 - 选项共现模式分析
 
-## 主要发现 | Key Findings
-
-1. **样本特征**: 64个组织中，50-250人规模的组织占比最高（37.5%）
-2. **行业分布**: 涵盖教育、能源、金融、医疗、制造业等多个行业
-3. **ZTA认知**: 组织对ZTA的熟悉程度和必要性感知存在差异
-4. **采用预测**: 逻辑回归模型显示ZTA必要性感知对采用行为有正向影响
-5. **统计显著性**: 组织规模与ZTA采用之间无显著关联（p=0.5075）
-
-1. **Sample Characteristics**: Among 64 organizations, those with 50-250 employees represent the highest proportion (37.5%)
-2. **Industry Distribution**: Covers multiple industries including education, energy, finance, healthcare, manufacturing
-3. **ZTA Awareness**: Organizations show varying levels of familiarity and perceived necessity of ZTA
-4. **Adoption Prediction**: Logistic regression model indicates perceived necessity of ZTA has a positive impact on adoption behavior
-5. **Statistical Significance**: No significant association between organizational size and ZTA adoption (p=0.5075)
-
 ## 结果文件说明 | Output Files Description
 
 | 文件名 | 描述 | Description |
@@ -156,8 +142,3 @@ jupyter notebook
 jupyter notebook ZTA_Analysis_executed.ipynb
 ```
 
-## 许可证 | License
-
-本项目采用MIT许可证。详情请参阅 [LICENSE](LICENSE) 文件。
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
