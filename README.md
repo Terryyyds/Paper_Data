@@ -6,9 +6,10 @@
 
 ## 项目概述 | Project Overview
 
-本项目是一个关于零信任架构（Zero Trust Architecture, ZTA）采用情况的综合调查研究分析。通过问卷调查收集数据，运用多种统计分析方法，深入探讨组织对ZTA的认知、态度和采用行为。
+本项目是一个关于零信任架构（Zero Trust Architecture, ZTA）采用情况的综合调查研究分析。通过问卷调查收集数据，运用多种统计分析方法，深入探讨组织对ZTA的认知、态度和采用行为。此 Notebook 存储了论文数据，包含数据清洗、可靠性分析（克朗巴赫α系数）、探索性因子分析（EFA）、描述性统计、相关性分析及方差/卡方分析的完整工作流程与结果。
 
-This project is a comprehensive survey research analysis on Zero Trust Architecture (ZTA) adoption. Through questionnaire data collection and various statistical analysis methods, it explores organizations' cognition, attitudes, and adoption behaviors towards ZTA.
+This project is a comprehensive survey research analysis on Zero Trust Architecture (ZTA) adoption. Through questionnaire data collection and various statistical analysis methods, it explores organizations' cognition, attitudes, and adoption behaviors towards ZTA. This is a notebook storing ZTA thesis data, containing the complete workflow and results for data cleaning, reliability analysis (Cronbach's Alpha), EFA, descriptive statistics, correlation, and variance/chi-square analysis.
+
 
 ## 项目结构 | Project Structure
 
@@ -33,12 +34,6 @@ Paper_Data/
 ```
 ## 研究目标 | Research Objectives
 
-- 分析组织对零信任架构的熟悉程度和认知水平
-- 评估组织对ZTA必要性的感知
-- 调查当前安全解决方案的满意度
-- 探索组织规模、行业类型与ZTA采用的关系
-- 识别影响ZTA采用的关键因素
-
 - Analyze organizations' familiarity and awareness levels with Zero Trust Architecture
 - Assess organizations' perception of ZTA necessity
 - Investigate satisfaction with current security solutions
@@ -46,11 +41,6 @@ Paper_Data/
 - Identify key factors influencing ZTA adoption
 
 ## 数据来源 | Data Source
-
-- **样本规模**: 64个组织
-- **数据格式**: Excel格式（Cleaned Data-5.20.xlsx）
-- **数据收集**: 通过Qualtrics平台进行的在线问卷调查
-- **数据清洗**: 自动化的数据预处理和标准化
 
 - **Sample Size**: 64 organizations
 - **Data Format**: Excel format (Cleaned Data-5.20.xlsx)
