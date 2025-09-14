@@ -6,7 +6,7 @@
 
 ## 项目概述 | Project Overview
 
-本项目是一个关于零信任架构（Zero Trust Architecture, ZTA）采用情况的综合调查研究分析。通过问卷调查收集数据，运用多种统计分析方法，深入探讨组织对ZTA的认知、态度和采用行为。此 Notebook 存储了论文数据，包含数据清洗、可靠性分析（克朗巴赫α系数）、探索性因子分析（EFA）、描述性统计、相关性分析及方差/卡方分析的完整工作流程与结果。
+本项目是一个关于零信任架构（Zero Trust Architecture, ZTA）采用情况的综合调查研究。通过问卷调查收集数据，运用多种统计分析方法，深入探讨组织对ZTA的认知、态度和采用行为。此 Notebook 存储了论文数据，包含数据清洗、可靠性分析（克朗巴赫α系数）、探索性因子分析（EFA）、描述性统计、相关性分析及方差/卡方分析的完整工作流程与结果。
 
 This project is a comprehensive survey research analysis on Zero Trust Architecture (ZTA) adoption. Through questionnaire data collection and various statistical analysis methods, it explores organizations' cognition, attitudes, and adoption behaviors towards ZTA. This is a notebook storing ZTA thesis data, containing the complete workflow and results for data cleaning, reliability analysis (Cronbach's Alpha), EFA, descriptive statistics, correlation, and variance/chi-square analysis.
 
